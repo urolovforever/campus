@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def program_list(request):
+    """Programs list view"""
+    return render(request, 'programs_list.html')
