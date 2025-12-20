@@ -11,6 +11,7 @@ class TeamMember(models.Model):
     image = models.ImageField(upload_to='team/', verbose_name="Profile Image")
     order = models.IntegerField(default=0, verbose_name="Display Order")
     is_active = models.BooleanField(default=True, verbose_name="Active")
+    is_featured = models.BooleanField(default=False, verbose_name="Featured on Homepage")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

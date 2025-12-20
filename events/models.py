@@ -6,6 +6,7 @@ class Event(models.Model):
     name = models.CharField(max_length=200, verbose_name="Event Name")
     date = models.DateField(verbose_name="Event Date")
     location = models.CharField(max_length=200, verbose_name="Location")
+    is_featured = models.BooleanField(default=False, verbose_name="Featured on Homepage")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

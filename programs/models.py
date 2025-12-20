@@ -15,6 +15,7 @@ class Program(models.Model):
     duration = models.CharField(max_length=100, verbose_name="Duration", blank=True, help_text="e.g., 6 months, Ongoing")
     participants = models.IntegerField(default=0, verbose_name="Number of Participants")
     is_active = models.BooleanField(default=True, verbose_name="Active")
+    is_featured = models.BooleanField(default=False, verbose_name="Featured on Homepage")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
