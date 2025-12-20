@@ -1,10 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block title %}Contact Us - Green Campus Initiative{% endblock %}
+
+{% block content %}
+<!-- Contact Section -->
+<section class="about-section" id="contact">
+    <div class="section-content">
+        <div class="about-grid">
+            <div class="about-text">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Green Campus Initiative</h2>
+                <p class="about-paragraph">Have questions about our programs or want to get involved? We'd love to hear from you! Reach out to us and join the movement for a sustainable future.</p>
+
+                <div class="about-values" style="margin-top: 40px;">
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="value-title">Email</h4>
+                            <p class="value-desc">info@greencampus.org</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="value-title">Phone</h4>
+                            <p class="value-desc">+998 71 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon-wrap">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="value-title">Address</h4>
+                            <p class="value-desc">Tashkent, Uzbekistan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px;">
+                    <h4 class="value-title" style="margin-bottom: 16px;">Follow Us</h4>
+                    <div style="display: flex; gap: 12px;">
+                        <a href="https://facebook.com/greencampus" class="social-icon" target="_blank" rel="noopener noreferrer" style="background: rgba(132, 204, 22, 0.1); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/greencampus" class="social-icon" target="_blank" rel="noopener noreferrer" style="background: rgba(132, 204, 22, 0.1); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/greencampus" class="social-icon" target="_blank" rel="noopener noreferrer" style="background: rgba(132, 204, 22, 0.1); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@greencampus" class="social-icon" target="_blank" rel="noopener noreferrer" style="background: rgba(132, 204, 22, 0.1); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                                <path d="m10 15 5-3-5-3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-visual">
+                <div class="image-card" style="height: 100%;">
+                    <div class="image-placeholder" style="height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <div style="padding: 40px; width: 100%;">
+                            <form style="display: flex; flex-direction: column; gap: 20px;">
+                                <div>
+                                    <label style="display: block; color: rgba(255, 255, 255, 0.9); margin-bottom: 8px; font-size: 14px; font-weight: 500;">Name</label>
+                                    <input type="text" placeholder="Your Name" style="width: 100%; padding: 12px 16px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; color: white; font-size: 14px; outline: none; transition: all 0.3s;">
+                                </div>
+                                <div>
+                                    <label style="display: block; color: rgba(255, 255, 255, 0.9); margin-bottom: 8px; font-size: 14px; font-weight: 500;">Email</label>
+                                    <input type="email" placeholder="your@email.com" style="width: 100%; padding: 12px 16px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; color: white; font-size: 14px; outline: none; transition: all 0.3s;">
+                                </div>
+                                <div>
+                                    <label style="display: block; color: rgba(255, 255, 255, 0.9); margin-bottom: 8px; font-size: 14px; font-weight: 500;">Subject</label>
+                                    <input type="text" placeholder="What is this about?" style="width: 100%; padding: 12px 16px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; color: white; font-size: 14px; outline: none; transition: all 0.3s;">
+                                </div>
+                                <div>
+                                    <label style="display: block; color: rgba(255, 255, 255, 0.9); margin-bottom: 8px; font-size: 14px; font-weight: 500;">Message</label>
+                                    <textarea rows="5" placeholder="Your message..." style="width: 100%; padding: 12px 16px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(132, 204, 22, 0.2); border-radius: 8px; color: white; font-size: 14px; outline: none; resize: vertical; transition: all 0.3s;"></textarea>
+                                </div>
+                                <button type="submit" class="primary-btn" style="width: 100%; margin-top: 10px;">
+                                    <span>Send Message</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"/>
+                                        <path d="m12 5 7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-glow"></div>
+    <div class="cta-content">
+        <svg class="icon cta-heart" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+        </svg>
+        <h2 class="cta-title">Ready to Make Your Campus Green?</h2>
+        <p class="cta-text">Join the movement for a sustainable future. Together we can do more!</p>
+        <div class="cta-buttons">
+            <button class="cta-primary-btn">
+                <span>Become a Partner</span>
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"/>
+                    <path d="m12 5 7 7-7 7"/>
+                </svg>
+            </button>
+            <button class="cta-secondary-btn">Become a Volunteer</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
