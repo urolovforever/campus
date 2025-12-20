@@ -22,6 +22,7 @@ class News(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=True, verbose_name="Published")
+    is_featured = models.BooleanField(default=False, verbose_name="Featured on Homepage")
 
     class Meta:
         ordering = ['-created_at']
