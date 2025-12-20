@@ -33,3 +33,7 @@ Thumbs.db
 
 # Translation compiled files
 *.mo
+.gitignore
+.idea
+.venv
+.
