@@ -1,3 +1,27 @@
 from django.contrib import admin
+from .models import TeamMember
 
-# Register your models here.
+
+@admin.register(TeamMember)
+class TeamMemberAdmin(admin.ModelAdmin):
+    list_display = ('name', 'role', 'email', 'order', 'is_active', 'created_at')
+    list_filter = ('is_active', 'created_at')
+    search_fields = ('name', 'role', 'email')
+    list_editable = ('order', 'is_active')
+    readonly_fields = ('created_at', 'updated_at')
+
+    fieldsets = (
+        ('Personal Information', {
+            'fields': ('name', 'role', 'email', 'image')
+        }),
+        ('Social Media', {
+            'fields': ('linkedin', 'twitter')
+        }),
+        ('Settings', {
+            'fields': ('order', 'is_active')
+        }),
+        ('Timestamps', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
