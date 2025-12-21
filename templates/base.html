@@ -50,6 +50,7 @@
                     <a href="{% url 'programs:list' %}" class="nav-link {% if 'programs' in request.resolver_match.namespace %}active{% endif %}">Programs</a>
                     <a href="{% url 'news:list' %}" class="nav-link {% if 'news' in request.resolver_match.namespace %}active{% endif %}">News</a>
                     <a href="{% url 'events:list' %}" class="nav-link {% if 'events' in request.resolver_match.namespace %}active{% endif %}">Events</a>
+                    <a href="{% url 'gallery:list' %}" class="nav-link {% if 'gallery' in request.resolver_match.namespace %}active{% endif %}">Gallery</a>
                     <a href="{% url 'team:list' %}" class="nav-link {% if 'team' in request.resolver_match.namespace %}active{% endif %}">Team</a>
                     <a href="{% url 'contact:contact' %}" class="nav-link {% if 'contact' in request.resolver_match.namespace %}active{% endif %}">Contact</a>
 
