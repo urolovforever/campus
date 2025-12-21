@@ -153,6 +153,10 @@ body {
     color: #84cc16;
 }
 
+.nav-link.active {
+    color: #84cc16;
+}
+
 /* Language Selector */
 .lang-selector {
     position: relative;
