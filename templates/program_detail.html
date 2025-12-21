@@ -5,7 +5,7 @@
 
 {% block content %}
 <!-- Program Detail Section -->
-<section class="about-section" style="padding-top: 120px; background: #0a0a0a;">
+<section class="about-section" style="padding-top: 120px;">
     <div class="section-content">
         <div style="max-width: 1000px; margin: 0 auto;">
             <!-- Back Link -->
@@ -18,7 +18,7 @@
             </a>
 
             <!-- Title -->
-            <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700; color: white; margin-bottom: 30px; line-height: 1.2;">
+            <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700; color: #1a1a1a; margin-bottom: 30px; line-height: 1.2;">
                 {{ program.title }}
             </h1>
 
@@ -30,7 +30,7 @@
                         <circle cx="12" cy="12" r="10"/>
                         <polyline points="12 6 12 12 16 14"/>
                     </svg>
-                    <span style="color: rgba(255, 255, 255, 0.8); font-size: 15px;">{{ program.duration }}</span>
+                    <span style="color: #4a4a4a; font-size: 15px;">{{ program.duration }}</span>
                 </div>
                 {% endif %}
                 {% if program.participants %}
@@ -41,7 +41,7 @@
                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
                         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                     </svg>
-                    <span style="color: rgba(255, 255, 255, 0.8); font-size: 15px;">{{ program.participants }} Participants</span>
+                    <span style="color: #4a4a4a; font-size: 15px;">{{ program.participants }} Participants</span>
                 </div>
                 {% endif %}
             </div>
@@ -55,21 +55,21 @@
 
             <!-- Overview -->
             <div style="margin-bottom: 50px;">
-                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; color: white; margin-bottom: 20px;">
+                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; color: #1a1a1a; margin-bottom: 20px;">
                     Overview
                 </h2>
-                <div style="color: rgba(255, 255, 255, 0.8); font-size: 17px; line-height: 1.8;">
+                <div style="color: #4a4a4a; font-size: 17px; line-height: 1.8;">
                     {{ program.overview|linebreaks }}
                 </div>
             </div>
 
             <!-- Objectives -->
             <div style="margin-bottom: 50px;">
-                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; color: white; margin-bottom: 20px;">
+                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; color: #1a1a1a; margin-bottom: 20px;">
                     Objectives
                 </h2>
                 <div style="padding: 30px; background: rgba(132, 204, 22, 0.05); border-left: 4px solid #84cc16; border-radius: 8px;">
-                    <div style="color: rgba(255, 255, 255, 0.9); font-size: 16px; line-height: 1.8;">
+                    <div style="color: #2a2a2a; font-size: 16px; line-height: 1.8;">
                         {{ program.objectives|linebreaks }}
                     </div>
                 </div>
@@ -78,11 +78,11 @@
             <!-- Impact -->
             {% if program.impact %}
             <div style="margin-bottom: 50px;">
-                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; color: white; margin-bottom: 20px;">
+                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; color: #1a1a1a; margin-bottom: 20px;">
                     Impact
                 </h2>
                 <div style="padding: 40px; background: linear-gradient(135deg, rgba(132, 204, 22, 0.1) 0%, rgba(132, 204, 22, 0.05) 100%); border-radius: 12px; border: 1px solid rgba(132, 204, 22, 0.2);">
-                    <div style="color: rgba(255, 255, 255, 0.9); font-size: 16px; line-height: 1.8;">
+                    <div style="color: #2a2a2a; font-size: 16px; line-height: 1.8;">
                         {{ program.impact|linebreaks }}
                     </div>
                 </div>
@@ -91,8 +91,8 @@
 
             <!-- Join Program CTA -->
             <div style="padding: 40px; background: rgba(132, 204, 22, 0.05); border-radius: 12px; text-align: center; margin-top: 60px;">
-                <h3 style="color: white; font-size: 24px; margin-bottom: 15px; font-family: 'Space Grotesk', sans-serif;">Interested in This Program?</h3>
-                <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 25px; font-size: 16px;">Join us in making campuses more sustainable and environmentally friendly.</p>
+                <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 15px; font-family: 'Space Grotesk', sans-serif;">Interested in This Program?</h3>
+                <p style="color: #4a4a4a; margin-bottom: 25px; font-size: 16px;">Join us in making campuses more sustainable and environmentally friendly.</p>
                 <button class="primary-btn" style="margin: 0 auto;">
                     <span>Get Involved</span>
                     <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
