@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}About Us - Green Campus Initiative{% endblock %}
+{% block title %}{% trans "About Us" %} - {% trans "Green Campus Initiative" %}{% endblock %}
 
 {% block content %}
 <!-- About Section -->
@@ -9,10 +9,10 @@
     <div class="section-content">
         <div class="about-grid">
             <div class="about-text">
-                <span class="section-tag">About Green Campus Initiative</span>
-                <h2 class="section-title">A Mission That Unites Generations</h2>
-                <p class="about-paragraph">Since 2018, we have been working to make every university campus a model of environmental responsibility. Our mission is not just about greening territories, but creating a culture of sustainable development.</p>
-                <p class="about-paragraph">We believe that it is within university walls that leaders are formed who will change society's attitude towards the environment.</p>
+                <span class="section-tag">{% trans "About Green Campus Initiative" %}</span>
+                <h2 class="section-title">{% trans "A Mission That Unites Generations" %}</h2>
+                <p class="about-paragraph">{% trans "Since 2018, we have been working to make every university campus a model of environmental responsibility. Our mission is not just about greening territories, but creating a culture of sustainable development." %}</p>
+                <p class="about-paragraph">{% trans "We believe that it is within university walls that leaders are formed who will change society's attitude towards the environment." %}</p>
                 <div class="about-values">
                     <div class="value-item">
                         <div class="value-icon-wrap">
@@ -23,8 +23,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="value-title">Science & Innovation</h4>
-                            <p class="value-desc">Research-based solutions</p>
+                            <h4 class="value-title">{% trans "Science & Innovation" %}</h4>
+                            <p class="value-desc">{% trans "Research-based solutions" %}</p>
                         </div>
                     </div>
                     <div class="value-item">
@@ -38,8 +38,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="value-title">Community</h4>
-                            <p class="value-desc">Uniting activists across the country</p>
+                            <h4 class="value-title">{% trans "Community" %}</h4>
+                            <p class="value-desc">{% trans "Uniting activists across the country" %}</p>
                         </div>
                     </div>
                     <div class="value-item">
@@ -52,8 +52,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="value-title">Sustainability</h4>
-                            <p class="value-desc">Long-term environmental solutions</p>
+                            <h4 class="value-title">{% trans "Sustainability" %}</h4>
+                            <p class="value-desc">{% trans "Long-term environmental solutions" %}</p>
                         </div>
                     </div>
                 </div>
@@ -63,9 +63,9 @@
                     <div class="image-placeholder">
                         <div class="image-pattern"></div>
                         <div class="image-icon-wrap">
-                            <img src="{% static 'img/volunteer.jpg' %}" alt="Our volunteers in action" class="action-image">
+                            <img src="{% static 'img/volunteer.jpg' %}" alt="{% trans 'Our volunteers in action' %}" class="action-image">
                         </div>
-                        <span class="image-label">Our volunteers in action</span>
+                        <span class="image-label">{% trans "Our volunteers in action" %}</span>
                     </div>
                 </div>
                 <div class="floating-card">
@@ -79,7 +79,7 @@
                             <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
                         </svg>
                     </div>
-                    <span class="floating-text">"Green Campus of the Year" Award 2024</span>
+                    <span class="floating-text">{% trans '"Green Campus of the Year" Award 2024' %}</span>
                 </div>
                 <div class="decor-circle-1"></div>
                 <div class="decor-circle-2"></div>
@@ -95,17 +95,17 @@
         <svg class="icon cta-heart" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
         </svg>
-        <h2 class="cta-title">Ready to Make Your Campus Green?</h2>
-        <p class="cta-text">Join the movement for a sustainable future. Together we can do more!</p>
+        <h2 class="cta-title">{% trans "Ready to Make Your Campus Green?" %}</h2>
+        <p class="cta-text">{% trans "Join the movement for a sustainable future. Together we can do more!" %}</p>
         <div class="cta-buttons">
             <button class="cta-primary-btn">
-                <span>Become a Partner</span>
+                <span>{% trans "Become a Partner" %}</span>
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"/>
                     <path d="m12 5 7 7-7 7"/>
                 </svg>
             </button>
-            <button class="cta-secondary-btn">Become a Volunteer</button>
+            <button class="cta-secondary-btn">{% trans "Become a Volunteer" %}</button>
         </div>
     </div>
 </section>

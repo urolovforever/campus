@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Gallery - Green Campus Initiative{% endblock %}
+{% block title %}{% trans "Gallery" %} - {% trans "Green Campus Initiative" %}{% endblock %}
 
 {% block content %}
 <!-- Gallery Section -->
@@ -9,10 +9,10 @@
     <div class="section-content">
         <!-- Header -->
         <div class="gallery-header">
-            <span class="section-tag">Our Gallery</span>
-            <h1 class="section-title gallery-title">Moments That Inspire</h1>
+            <span class="section-tag">{% trans "Our Gallery" %}</span>
+            <h1 class="section-title gallery-title">{% trans "Moments That Inspire" %}</h1>
             <p class="about-paragraph gallery-description">
-                Explore the journey of Green Campus Initiative through powerful visuals. From campus transformations to community achievements, every image tells a story of positive change.
+                {% trans "Explore the journey of Green Campus Initiative through powerful visuals. From campus transformations to community achievements, every image tells a story of positive change." %}
             </p>
         </div>
 
@@ -24,7 +24,7 @@
                 <!-- Image -->
                 <div class="gallery-image-container">
                     {% if image.image %}
-                    <img src="{{ image.image.url }}" alt="Gallery image" class="gallery-image">
+                    <img src="{{ image.image.url }}" alt="{% trans 'Gallery image' %}" class="gallery-image">
                     {% else %}
                     <div class="gallery-image-placeholder">
                         <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -46,8 +46,8 @@
                 <circle cx="9" cy="9" r="2"/>
                 <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
             </svg>
-            <h3 class="gallery-empty-title">No Images Found</h3>
-            <p class="gallery-empty-text">No images have been added to the gallery yet.</p>
+            <h3 class="gallery-empty-title">{% trans "No Images Found" %}</h3>
+            <p class="gallery-empty-text">{% trans "No images have been added to the gallery yet." %}</p>
         </div>
         {% endif %}
     </div>
@@ -60,17 +60,17 @@
         <svg class="icon cta-heart" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
         </svg>
-        <h2 class="cta-title">Ready to Make Your Campus Green?</h2>
-        <p class="cta-text">Join the movement for a sustainable future. Together we can do more!</p>
+        <h2 class="cta-title">{% trans "Ready to Make Your Campus Green?" %}</h2>
+        <p class="cta-text">{% trans "Join the movement for a sustainable future. Together we can do more!" %}</p>
         <div class="cta-buttons">
             <button class="cta-primary-btn">
-                <span>Become a Partner</span>
+                <span>{% trans "Become a Partner" %}</span>
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"/>
                     <path d="m12 5 7 7-7 7"/>
                 </svg>
             </button>
-            <button class="cta-secondary-btn">Become a Volunteer</button>
+            <button class="cta-secondary-btn">{% trans "Become a Volunteer" %}</button>
         </div>
     </div>
 </section>
