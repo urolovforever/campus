@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Our Team - Green Campus Initiative{% endblock %}
+{% block title %}{% trans "Our Team" %} - {% trans "Green Campus Initiative" %}{% endblock %}
 
 {% block content %}
 <!-- Team Section -->
 <section class="team-section" id="team">
     <div class="section-content">
         <div class="team-header">
-            <span class="section-tag">Our Team</span>
-            <h2 class="section-title">The People Making It Happen</h2>
+            <span class="section-tag">{% trans "Our Team" %}</span>
+            <h2 class="section-title">{% trans "The People Making It Happen" %}</h2>
         </div>
         <div class="team-grid">
             {% for member in team_members %}
@@ -55,7 +55,7 @@
             </div>
             {% empty %}
             <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
-                <p style="color: rgba(255, 255, 255, 0.6); font-size: 18px;">No team members available at the moment.</p>
+                <p style="color: rgba(255, 255, 255, 0.6); font-size: 18px;">{% trans "No team members available at the moment." %}</p>
             </div>
             {% endfor %}
         </div>
@@ -69,17 +69,17 @@
         <svg class="icon cta-heart" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
         </svg>
-        <h2 class="cta-title">Ready to Make Your Campus Green?</h2>
-        <p class="cta-text">Join the movement for a sustainable future. Together we can do more!</p>
+        <h2 class="cta-title">{% trans "Ready to Make Your Campus Green?" %}</h2>
+        <p class="cta-text">{% trans "Join the movement for a sustainable future. Together we can do more!" %}</p>
         <div class="cta-buttons">
             <button class="cta-primary-btn">
-                <span>Become a Partner</span>
+                <span>{% trans "Become a Partner" %}</span>
                 <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"/>
                     <path d="m12 5 7 7-7 7"/>
                 </svg>
             </button>
-            <button class="cta-secondary-btn">Become a Volunteer</button>
+            <button class="cta-secondary-btn">{% trans "Become a Volunteer" %}</button>
         </div>
     </div>
 </section>
