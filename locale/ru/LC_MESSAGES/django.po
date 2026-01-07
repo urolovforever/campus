@@ -313,6 +313,51 @@ msgstr "Участники"
 msgid "No events scheduled at the moment."
 msgstr "На данный момент запланированных мероприятий нет."
 
+msgid "Back to Events"
+msgstr "Назад к мероприятиям"
+
+msgid "Event Details"
+msgstr "Детали мероприятия"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Location"
+msgstr "Местоположение"
+
+msgid "About This Event"
+msgstr "О мероприятии"
+
+msgid "Register for Event"
+msgstr "Регистрация на мероприятие"
+
+msgid "Fill out the form below to register"
+msgstr "Заполните форму ниже для регистрации"
+
+msgid "Full Name"
+msgstr "Полное имя"
+
+msgid "Email Address"
+msgstr "Адрес электронной почты"
+
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+msgid "Additional Note"
+msgstr "Дополнительная заметка"
+
+msgid "Submit Registration"
+msgstr "Отправить регистрацию"
+
+msgid "Successfully registered for"
+msgstr "Вы успешно зарегистрировались на"
+
+msgid "You have already registered for this event with this email."
+msgstr "Вы уже зарегистрировались на это мероприятие с данной электронной почтой."
+
+msgid "Please correct the errors below."
+msgstr "Пожалуйста, исправьте ошибки ниже."
+
 # Team page
 msgid "No team members available at the moment."
 msgstr "На данный момент информация о команде недоступна."
