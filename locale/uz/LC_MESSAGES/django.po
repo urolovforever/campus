@@ -313,6 +313,51 @@ msgstr "Ishtirokchilar"
 msgid "No events scheduled at the moment."
 msgstr "Hozircha rejalashtirilgan tadbirlar yo'q."
 
+msgid "Back to Events"
+msgstr "Tadbirlarga qaytish"
+
+msgid "Event Details"
+msgstr "Tadbir tafsilotlari"
+
+msgid "Date"
+msgstr "Sana"
+
+msgid "Location"
+msgstr "Joylashuv"
+
+msgid "About This Event"
+msgstr "Ushbu tadbir haqida"
+
+msgid "Register for Event"
+msgstr "Tadbirga ro'yxatdan o'tish"
+
+msgid "Fill out the form below to register"
+msgstr "Ro'yxatdan o'tish uchun quyidagi formani to'ldiring"
+
+msgid "Full Name"
+msgstr "To'liq ism"
+
+msgid "Email Address"
+msgstr "Elektron pochta manzili"
+
+msgid "Phone Number"
+msgstr "Telefon raqami"
+
+msgid "Additional Note"
+msgstr "Qo'shimcha izoh"
+
+msgid "Submit Registration"
+msgstr "Ro'yxatdan o'tishni yuborish"
+
+msgid "Successfully registered for"
+msgstr "Muvaffaqiyatli ro'yxatdan o'tdingiz"
+
+msgid "You have already registered for this event with this email."
+msgstr "Siz allaqachon ushbu elektron pochta bilan ushbu tadbirga ro'yxatdan o'tgansiz."
+
+msgid "Please correct the errors below."
+msgstr "Quyidagi xatolarni tuzating."
+
 # Team page
 msgid "No team members available at the moment."
 msgstr "Hozircha jamoa a'zolari mavjud emas."
