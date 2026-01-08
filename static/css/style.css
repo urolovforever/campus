@@ -2668,6 +2668,115 @@ textarea.contact-input {
     margin-bottom: 4px;
 }
 
+/* Static Pages Styles (FAQ, Privacy, Terms, etc.) */
+.static-page-section {
+    min-height: 100vh;
+    padding: 120px 0 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 16px 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #64748b;
+    margin-top: 12px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.faq-item {
+    background: #ffffff;
+    border: 1px solid rgba(132, 204, 22, 0.15);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #84cc16;
+    box-shadow: 0 8px 24px rgba(132, 204, 22, 0.1);
+    transform: translateY(-2px);
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.content-block {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background: #ffffff;
+    border: 1px solid rgba(132, 204, 22, 0.15);
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.content-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.content-text {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.page-cta {
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(132, 204, 22, 0.15);
+}
+
+.page-cta .cta-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 32px;
+    }
+
+    .faq-item,
+    .content-block {
+        padding: 20px;
+    }
+}
+
 /* Link Colors */
 .link-green {
     color: #84cc16;

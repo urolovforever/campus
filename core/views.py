@@ -24,3 +24,18 @@ def home(request):
 def about(request):
     """About page view"""
     return render(request, 'about.html')
+
+
+def faq(request):
+    """FAQ page view"""
+    return render(request, 'faq.html')
+
+
+def privacy(request):
+    """Privacy policy page view"""
+    return render(request, 'privacy.html')
+
+
+def terms(request):
+    """Terms of use page view"""
+    return render(request, 'terms.html')
