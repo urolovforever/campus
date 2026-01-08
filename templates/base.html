@@ -178,10 +178,10 @@
                         </div>
                         <div class="footer-column">
                             <h4 class="footer-col-title">{% trans "Resources" %}</h4>
-                            <a href="#materials" class="footer-link">{% trans "Methodological Materials" %}</a>
-                            <a href="#research" class="footer-link">{% trans "Research" %}</a>
-                            <a href="#faq" class="footer-link">{% trans "FAQ" %}</a>
-                            <a href="#media" class="footer-link">{% trans "For Media" %}</a>
+                            <a href="{% url 'programs:list' %}" class="footer-link">{% trans "Methodological Materials" %}</a>
+                            <a href="{% url 'news:list' %}" class="footer-link">{% trans "Research" %}</a>
+                            <a href="{% url 'core:faq' %}" class="footer-link">{% trans "FAQ" %}</a>
+                            <a href="{% url 'contact:contact' %}" class="footer-link">{% trans "For Media" %}</a>
                         </div>
                         <div class="footer-column">
                             <h4 class="footer-col-title">{% trans "Contact" %}</h4>
@@ -211,8 +211,8 @@
                 <div class="footer-bottom">
                     <p class="copyright">© 2025 Green Campus Initiative. {% trans "All rights reserved." %}</p>
                     <div class="footer-legal">
-                        <a href="#privacy" class="legal-link">{% trans "Privacy Policy" %}</a>
-                        <a href="#terms" class="legal-link">{% trans "Terms of Use" %}</a>
+                        <a href="{% url 'core:privacy' %}" class="legal-link">{% trans "Privacy Policy" %}</a>
+                        <a href="{% url 'core:terms' %}" class="legal-link">{% trans "Terms of Use" %}</a>
                     </div>
                 </div>
             </div>
