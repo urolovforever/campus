@@ -544,3 +544,10 @@ msgstr "Shartlarga o'zgartirishlar"
 
 msgid "We reserve the right to modify these terms at any time. Continued use of the website constitutes acceptance of updated terms."
 msgstr "Biz ushbu shartlarni istalgan vaqtda o'zgartirish huquqini o'zimizda saqlaymiz. Veb-saytdan davom etib foydalanish yangilangan shartlarni qabul qilishni bildiradi."
+
+# Partners Section
+msgid "Our Partners"
+msgstr "Bizning hamkorlarimiz"
+
+msgid "Trusted by Leading Organizations"
+msgstr "Yetakchi tashkilotlar tomonidan ishonilgan"

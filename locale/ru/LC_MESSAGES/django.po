@@ -544,3 +544,10 @@ msgstr "Изменения в условиях"
 
 msgid "We reserve the right to modify these terms at any time. Continued use of the website constitutes acceptance of updated terms."
 msgstr "Мы оставляем за собой право изменять эти условия в любое время. Продолжение использования веб-сайта означает принятие обновленных условий."
+
+# Partners Section
+msgid "Our Partners"
+msgstr "Наши партнеры"
+
+msgid "Trusted by Leading Organizations"
+msgstr "Нам доверяют ведущие организации"
