@@ -435,4 +435,47 @@
         </div>
     </div>
 </section>
+
+<!-- Partners Section -->
+{% if partners %}
+<section class="partners-section">
+    <div class="container">
+        <div class="partners-header">
+            <span class="section-tag">{% trans "Our Partners" %}</span>
+            <h2 class="section-title">{% trans "Trusted by Leading Organizations" %}</h2>
+        </div>
+        <div class="partners-carousel-wrapper">
+            <div class="partners-carousel">
+                {% for partner in partners %}
+                <div class="partner-item">
+                    {% if partner.website_url %}
+                    <a href="{{ partner.website_url }}" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="partner-logo">
+                    </a>
+                    {% else %}
+                    <div class="partner-link">
+                        <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="partner-logo">
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <!-- Duplicate for seamless loop -->
+                {% for partner in partners %}
+                <div class="partner-item">
+                    {% if partner.website_url %}
+                    <a href="{{ partner.website_url }}" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="partner-logo">
+                    </a>
+                    {% else %}
+                    <div class="partner-link">
+                        <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="partner-logo">
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
 {% endblock %}
