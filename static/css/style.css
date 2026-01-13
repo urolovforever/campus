@@ -113,12 +113,9 @@ body {
 .logo-icon-wrap {
     width: 56px;
     height: 56px;
-    background-color: rgba(132, 204, 22, 0.12);
-    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(132, 204, 22, 0.2);
 }
 .logo-img {
     width: 56px;
