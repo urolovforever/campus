@@ -143,6 +143,15 @@ body {
     color: #1a1a2e;
 }
 
+.logo-text-mobile {
+    display: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1a1a2e;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -1879,6 +1888,10 @@ body {
     .nav-content .logo .logo-img {
         width: 60px;
         height: 60px;
+    }
+
+    .logo-text-mobile {
+        display: block;
     }
 
     .mobile-menu-toggle {
