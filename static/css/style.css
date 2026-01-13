@@ -2847,17 +2847,12 @@ textarea.contact-input {
 /* Partners Section */
 .partners-section {
     padding: 80px 0;
-    background: linear-gradient(180deg, rgba(132, 204, 22, 0.02) 0%, rgba(132, 204, 22, 0.05) 100%);
     overflow: hidden;
 }
 
 .partners-header {
     text-align: center;
-    margin-bottom: 80px;
-}
-
-.partners-header .section-tag {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .partners-carousel-wrapper {
@@ -2956,11 +2951,7 @@ textarea.contact-input {
     }
 
     .partners-header {
-        margin-bottom: 50px;
-    }
-
-    .partners-header .section-tag {
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
 
     .partners-carousel {
